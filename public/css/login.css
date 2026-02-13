@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #90dee9, #5ca6b2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 350px;
+    background: linear-gradient(180deg, #5ca7b2a4, #4f9aa6);
+    padding: 60px 40px 40px;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+.avatar-circle {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: #0b2c4a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-circle i {
+    color: #fff;
+    font-size: 40px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    color: rgba(255,255,255,0.7);
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.input-group input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 25px;
+}
+
+.options a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #0b2c4a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #08203a;
+}
+.login-btn:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
